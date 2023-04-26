@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #app {
+            display: none;
+        }
+    </style>
+    <title>Recetario</title>
+</head>
+
+<body id="app">
+
+    <div id="container-menuHamburger">
+        <header>
+            <div>
+                <a href="./index.html"><img id="logoMenu" alt=""></a>
+                <p>Recetario</p>
+            </div>
+            <nav>
+                <img id="menuHamburgerClose" alt="Menu">
+            </nav>
+        </header>
+
+        <div id="menu-categories">
+            <h2>Ingredientes | Top 5 </h2>
+
+            <a href="./catalago.html?c=Beef">Beef</a>
+            <a href="./catalago.html?c=Dessert">Dessert</a>
+            <a href="./catalago.html?c=Chicken">Chicken</a>
+            <a href="./catalago.html?c=Vegetarian">Vegetarian</a>
+            <a href="./catalago.html?c=Pork">Pork</a>
+
+            <div class="buscador">
+                <input id="input_menu" class="buscador__input" type="text" placeholder="p ej.: Kung Pao Chicken">
+                <a><button id="buscar_menu" class="botones__buscar boton botones_buscador ">Buscar</button></a>
+
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <a href="./index.html"><img id="logoHome" alt=""></a>
+            <p>Recetario</p>
+        </div>
+        <nav>
+            <img id="menuHamburger" alt="Menu">
+        </nav>
+    </header>
+
+    <main id="main-catalago" class="container">
+
+        <section class="breadcrumbs">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item previus"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" id="text-search">Chicken</li>
+                </ol>
+            </nav>
+        </section>
+
+        <div class="catalago">
+        </div>
+    </main>
+
+    <footer class="text-center text-white fixed-bottom">
+        <!-- Copyright -->
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a href="https://gitlab.com/BrannMojLop/project_final_fase02.git">#BeduEquipo5</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+
+</html>

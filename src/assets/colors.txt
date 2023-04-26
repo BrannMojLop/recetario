@@ -1,0 +1,8 @@
+Colores usados en los diseños
+{
+   color de background: #F5F9FA
+   principal (rojo): #ED5565
+   color secundario (gris) : #434242
+   color secundario (azul): #1B97D5 
+   color secundario (blanco): #F5F9FA
+}

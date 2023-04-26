@@ -1,0 +1,118 @@
+@import "~bootstrap/scss/bootstrap";
+
+// Variables-Colors
+$bgColor: #f5f9fa;
+$principalColor: #ed5565;
+$grisColor: #434242;
+$azulColor: #1b97d5;
+$blancoColor: #f5f9fa;
+
+// Generales
+body {
+  background-color: $bgColor;
+}
+
+// Header
+header {
+  width: 98%;
+  display: flex;
+  margin: 0% 1%;
+  align-items: center;
+
+  div {
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      margin-right: 1%;
+      width: 35px;
+    }
+    p {
+      margin: 0;
+      font-size: 1.5em;
+    }
+  }
+
+  .buscador {
+    display: none;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+
+    .buscador__input {
+      width: 90%;
+      background-color: transparent;
+      border: transparent;
+      font-size: 20px;
+      text-align: center;
+      outline: none;
+      border-bottom: solid 2px #000;
+    }
+    .buscador__imagen {
+      width: 5%;
+    }
+  }
+
+  nav {
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      width: 35px;
+      cursor: pointer;
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $grisColor;
+
+  div {
+    a {
+      font-size: 16px;
+      color: $blancoColor;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $principalColor;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  header {
+    div {
+      img {
+        width: 50px;
+      }
+      p {
+        margin: 0;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  nav {
+    a {
+      img {
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  header {
+    .buscador {
+      display: block;
+    }
+  }
+}
