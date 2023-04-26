@@ -1,4 +1,4 @@
-# project_final_Fase02
+# Recetario
 
 Proyecto final para curso Bedu Santander Desarrollo Web Full-Stack
 
